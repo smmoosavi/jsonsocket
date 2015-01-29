@@ -1,0 +1,24 @@
+{
+  "name": "jsonsocket",
+  "version": "0.0.1",
+  "description": "JSON socket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:smmoosavi/jsonsocket.git"
+  },
+  "keywords": [
+    "json",
+    "socket",
+    "tcp"
+  ],
+  "author": "smmoosavi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smmoosavi/jsonsocket/issues"
+  },
+  "homepage": "https://github.com/smmoosavi/jsonsocket"
+}
