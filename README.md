@@ -41,6 +41,9 @@ Send object over socket.
 ```js
 socket.write({foo: 'bar'});
 ```
+### `disconnect()`
+
+Destroy connection
 
 ### `on(eventType, listener)`
 
