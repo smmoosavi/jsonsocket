@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/smmoosavi/jsonsocket/issues"
   },
-  "homepage": "https://github.com/smmoosavi/jsonsocket"
+  "homepage": "https://github.com/smmoosavi/jsonsocket",
+  "dependencies": {
+    "debug": "^2.1.1"
+  }
 }
