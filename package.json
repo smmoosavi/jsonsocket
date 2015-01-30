@@ -1,6 +1,6 @@
 {
   "name": "jsonsocket",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "JSON socket",
   "main": "index.js",
   "scripts": {
