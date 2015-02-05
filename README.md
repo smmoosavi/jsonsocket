@@ -15,12 +15,14 @@ var JsonSocket = require('jsonsocket');
 
 ## Methods
 
-### `JsonSocket(ip, port)`
+### `JsonSocket(options)`
+### `JsonSocket(port, [host])`
+### `JsonSocket(path)`
 
-Create new json socket from ip and port.
+Create new json socket. Same as [`net.connect`](http://nodejs.org/api/net.html#net_net_connect_options_connectionlistener).
 
 ```js
-var socket = new JsonSocket('127.0.0.1', 7000);
+var socket = new JsonSocket(7000, '127.0.0.1');
 ```
 
 ### `JsonSocket(socket)`
@@ -45,24 +47,16 @@ socket.write({foo: 'bar'});
 
 Destroy connection
 
+### `connect(port, [host])`
+### `connect(path)`
+
+Same as [`net.Socket.connect`](http://nodejs.org/api/net.html#net_socket_connect_port_host_connectlistener)
+
 ### `on(eventType, listener)`
 
 Inherited from `events.EventEmitter`.
 
 ## Events
-
-### error
-
-Emitted when net.Socket emit error.
-
-> Error events are treated as a special case in node. If there is no listener for it,
-> then the default action is to print a stack trace and exit the program.
-
-[see more](http://nodejs.org/api/events.html#events_class_events_eventemitter).
-
-### newListener, removeListener
-
-Inherited from [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
 
 ### connect
 Emitted when socket connected (only when you pass ip, port).
@@ -77,6 +71,19 @@ socket.on('json', function (json) {
 ```
 ### disconnect
 Emitted when disconnected.
+
+### error
+
+Emitted when net.Socket emit error.
+
+> Error events are treated as a special case in node. If there is no listener for it,
+> then the default action is to print a stack trace and exit the program.
+
+[see more](http://nodejs.org/api/events.html#events_class_events_eventemitter).
+
+### newListener, removeListener
+
+Inherited from [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
 
 ## Logging
 
