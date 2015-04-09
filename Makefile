@@ -1,4 +1,4 @@
-JSHINT=@jshint
+JSHINT=@./node_modules/jshint/bin/jshint
 MOCHA=@./node_modules/.bin/mocha
 
 lint:
