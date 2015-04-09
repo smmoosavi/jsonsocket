@@ -6,3 +6,6 @@ lint:
 
 test: lint
 	$(MOCHA)
+
+coverage: lint
+	$(MOCHA) -R html-cov > coverage.html
